@@ -1,0 +1,4 @@
+aplod web ke git 
+$ git add .
+$ git commit -m '' (untuk menambah keterangan)
+$ git push
