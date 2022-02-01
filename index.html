@@ -148,6 +148,39 @@
           </div>
         </div>
       </div>
+      <section id="my-rubiks">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>My Rubiks</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="rubik-box">
+                <h4 class="rubik-name">Rubik 3 x 3</h4>
+                <img src="img/rubik/3x3.png" alt="3 x 3" class="rubik-img" />
+                <a href="#" class="btn btn-light rubik-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="rubik-box">
+                <h4 class="rubik-name">Rubik Megaminx</h4>
+                <img src="img/rubik/megaminx.png" alt="megaminx" class="rubik-img" />
+                <a href="#" class="btn btn-light rubik-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="rubik-box">
+                <h4 class="rubik-name">Rubik Triangle</h4>
+                <img src="img/rubik/triangle.png" alt="Triangle" class="rubik-img" />
+                <a href="#" class="btn btn-light rubik-detail-button">Show Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
@@ -219,6 +252,13 @@
           </a>
         </div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#a2d9ff"
+          fill-opacity="1"
+          d="M0,288L0,32L80,32L80,224L160,224L160,256L240,256L240,288L320,288L320,128L400,128L400,288L480,288L480,192L560,192L560,160L640,160L640,224L720,224L720,224L800,224L800,128L880,128L880,256L960,256L960,224L1040,224L1040,96L1120,96L1120,32L1200,32L1200,160L1280,160L1280,64L1360,64L1360,192L1440,192L1440,320L1360,320L1360,320L1280,320L1280,320L1200,320L1200,320L1120,320L1120,320L1040,320L1040,320L960,320L960,320L880,320L880,320L800,320L800,320L720,320L720,320L640,320L640,320L560,320L560,320L480,320L480,320L400,320L400,320L320,320L320,320L240,320L240,320L160,320L160,320L80,320L80,320L0,320L0,320Z"
+        ></path>
+      </svg>
     </section>
     <!-- akhir Galery -->
 
@@ -327,6 +367,16 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".rubik-box"), {
+        max: 25,
+        speed: 1000,
+        scale: 1.1,
+        glare: true,
+        gyroscope: true,
       });
     </script>
   </body>
