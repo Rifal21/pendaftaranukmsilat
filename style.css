@@ -1,12 +1,18 @@
+body{
+  overflow-x: hidden;
+}
 .jumbotron {
   padding-top: 6rem;
-  background-color: #e2edff;
+  background-color: #F4C400;
+}
+#about{
+  background-color: #921f1b;
 }
 #project {
-  background-color: #a2d9ff;
+  background-color: #F4C400;
 }
 #contact {
-  background-color: #a2d9ff;
+  background-color: #921f1b;
 }
 section {
   padding-top: 5rem;
