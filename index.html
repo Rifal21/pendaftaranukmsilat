@@ -21,7 +21,7 @@
   </head>
   <body id="home">
     <!-- navbar  -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-danger shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">OPREC UKM Silat Unper</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -118,7 +118,7 @@
             <div class="card" data-aos="flip-up">
               <img src="img/galery/grahita.JPG" class="card-img-top" alt="Gaming" />
               <div class="card-body">
-                <center><p class="card-text">Mabim jilid 3</p></center>
+                <center><p class="card-text">Mabim jilid 2</p></center>
               </div>
             </div>
           </div>
@@ -126,7 +126,7 @@
             <div class="card" data-aos="flip-up">
               <img src="img/galery/adiwira cowo.JPG" class="card-img-top" alt="Wedding" />
               <div class="card-body">
-                <center><p class="card-text">Mabim Jilid 4</p></center>
+                <center><p class="card-text">Mabim Jilid 3</p></center>
               </div>
             </div>
           </div>
@@ -134,7 +134,7 @@
             <div class="card" data-aos="flip-up">
               <img src="img/galery/adiwira cewe.JPG" class="card-img-top" alt="Programming" />
               <div class="card-body">
-                <center><p class="card-text">Mabim Jilid 4</p></center>
+                <center><p class="card-text">Mabim Jilid 3</p></center>
               </div>
             </div>
           </div>
@@ -142,7 +142,15 @@
             <div class="card" data-aos="flip-up">
               <img src="img/galery/birendra.JPG" class="card-img-top" alt="food photos" />
               <div class="card-body">
-                <center><p class="card-text">Mabim Jilid 5</p></center>
+                <center><p class="card-text">Mabim Jilid 4</p></center>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="flip-up">
+              <img src="img/galery/birendra2.jpg" class="card-img-top" alt="food photos" />
+              <div class="card-body">
+                <center><p class="card-text">Mabim Jilid 4</p></center>
               </div>
             </div>
           </div>
@@ -178,27 +186,43 @@
             <form name="pendataan-anggota-silat-baru">
               <div class="mb-3">
                 <label for="Name" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" required/>
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" required placeholder="Jojo Sigantar"/>
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" required/>
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" required placeholder="jojo@example.com"/>
               </div>
               <div class="mb-3">
                 <label for="No. HP / Whatsapp" class="form-label">No. HP / Whatsapp</label>
-                <input type="text" class="form-control" id="nohp" aria-describedby="nohp" name="nohp" required/>
+                <input type="text" class="form-control" id="nohp" aria-describedby="nohp" name="nohp" required placeholder="08xxxxxxxxxx"/>
               </div>
-              <div class="mb-3">
+              <!-- <div class="mb-3">
                 <label for="Program Studi" class="form-label">Program Studi</label>
-                <input type="text" class="form-control" id="prodi" aria-describedby="prodi" name="prodi" required/>
+                <input type="text" class="form-control" id="prodi" aria-describedby="prodi" name="prodi" required />
+              </div> -->
+              <div class="mb-3">
+                <label for="prodi" class="form-label">Program Studi</label>
+                <select class="form-select" aria-label="Default select example" name="prodi">
+                  <option selected>Pilih Program Studi</option>
+                  <option value="Pendidikan Bahasa Inggris">Pendidikan Bahasa Inggris</option>
+                  <option value="Pendidikan Guru dan Sekolah Dasar">Pendidikan Guru dan Sekolah Dasar</option>
+                  <option value="Manajemen">Manajemen</option>
+                  <option value="Akuntansi">Akuntansi</option>
+                  <option value="Teknik Informatika">Teknik Informatika</option>
+                  <option value="Teknik Sipil">Teknik Sipil</option>
+                  <option value="Farmasi">Farmasi</option>
+                  <option value="Agribisnis">Agribisnis</option>
+                  <option value="Agroteknologi">Agroteknologi</option>
+                  <option value="Peternakan">Peternakan</option>
+                </select>
               </div>
               <div class="mb-3">
                 <label for="angkatan" class="form-label">Angkatan</label>
-                <input type="text" class="form-control" id="angkatan" aria-describedby="angkatan" name="angkatan" required/>
+                <input type="text" class="form-control" id="angkatan" aria-describedby="angkatan" name="angkatan" required placeholder="Tahun angkatan"/>
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+                <textarea class="form-control" id="pesan" rows="3" name="pesan" placeholder="UKM SILAT Jaya Jaya Rahayu"></textarea>
               </div>
 
               <button type="submit" class="btn btn-success btn-kirim">Kirim</button>
@@ -213,7 +237,7 @@
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#DC3545"
+          fill="#ffc107"
           fill-opacity="1"
           d="M0,64L0,128L90,128L90,160L180,160L180,64L270,64L270,128L360,128L360,192L450,192L450,96L540,96L540,128L630,128L630,224L720,224L720,96L810,96L810,192L900,192L900,192L990,192L990,224L1080,224L1080,32L1170,32L1170,128L1260,128L1260,96L1350,96L1350,32L1440,32L1440,320L1350,320L1350,320L1260,320L1260,320L1170,320L1170,320L1080,320L1080,320L990,320L990,320L900,320L900,320L810,320L810,320L720,320L720,320L630,320L630,320L540,320L540,320L450,320L450,320L360,320L360,320L270,320L270,320L180,320L180,320L90,320L90,320L0,320L0,320Z"
         ></path>
@@ -222,7 +246,7 @@
     <!-- akhir contact -->
 
     <!-- footer -->
-    <footer class="bg-danger text-white text-center pb-5">
+    <footer class="bg-warning text-white text-center pb-5">
       <p>Created By <i class="bi bi-instagram"></i> <a href="https://www.instagram.com/afterfall_/" class="text-white fw-bold"> Afterfall</a></p>
     </footer>
     <!-- akhir footer -->

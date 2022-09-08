@@ -1,6 +1,9 @@
 body{
   overflow-x: hidden;
 }
+nav{
+  background-color: #921f1b;
+}
 .jumbotron {
   padding-top: 6rem;
   background-color: #F4C400;
